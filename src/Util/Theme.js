@@ -3,22 +3,29 @@ import "../App.css";
 
 export const theme = createTheme({
   palette: {
-    mode: "dark",
     primary: {
-      main: "#7232f2",
+      main: "#fcf7f5",
+      dark: "#5D8EDB",
+      background: "#87abe4",
     },
     secondary: {
-      main: "#cfcfcf",
-    },
-    background: {
-      main: "",
+      main: "##9287E4",
     },
   },
   typography: {
-    fontFamily: "Overpass Mono",
+    fontFamily: ['"Overpass Mono"', "GillSans", "Roboto"].join(","),
+    color: theme.palette.primary.main,
     logo: {
-      fontFamily: "Unica One",
+      fontFamily: "GillSans",
       fontSize: 25,
     },
   },
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        underline: "none",
+      },
+    },
+  },
+  overrides: {},
 });
