@@ -1,5 +1,5 @@
 import { useTheme } from "@mui/material/styles";
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink as RouterLink } from "react-router-dom";
 
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";

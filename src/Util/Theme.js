@@ -3,21 +3,25 @@ import "../App.css";
 
 export const theme = createTheme({
   palette: {
+    mode: "dark",
+    background: {
+      default: "#171717",
+    },
     primary: {
-      main: "#fcf7f5",
-      dark: "#5D8EDB",
-      background: "#87abe4",
+      main: "#fff",
     },
     secondary: {
-      main: "##9287E4",
+      main: "rgba(255, 255, 255, 0.7)",
     },
   },
   typography: {
-    fontFamily: ['"Overpass Mono"', "GillSans", "Roboto"].join(","),
-    color: theme.palette.primary.main,
+    fontFamily: ["Overpass Mono", "Roboto"].join(","),
     logo: {
       fontFamily: "GillSans",
       fontSize: 25,
+    },
+    title: {
+      fontSize: 20,
     },
   },
   components: {

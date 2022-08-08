@@ -4,12 +4,16 @@ import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 
 import Home from "./Home/Home.js";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
+import Projects from "./Projects/Projects";
 
 import Nav from "./Nav.js";
+
+import ModelViewer from "../Util/Model/Model.js";
 
 export default function Wrapper() {
   const theme = useTheme();
@@ -17,7 +21,6 @@ export default function Wrapper() {
   return (
     <Box
       sx={{
-        backgroundColor: theme.palette.primary.background,
         minHeight: "100vh",
         pt: { xs: 3, sm: 8 },
         pb: 10,
@@ -25,7 +28,9 @@ export default function Wrapper() {
     >
       <Container maxWidth="md">
         {/* ANIMATION */}
-        <Box sx={{ pt: 35, border: 1 }}></Box>
+        <Box sx={{ height: "40vh" }}>
+          <ModelViewer modelPath={"/3d/scene.gltf"} />
+        </Box>
 
         {/* CONTENT */}
         <Box sx={{ pt: 5 }}>
@@ -37,6 +42,7 @@ export default function Wrapper() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="About" element={<About />} />
+                <Route path="Projects" element={<Projects />} />
                 <Route path="Contact" element={<Contact />} />
               </Routes>
             </Grid>
