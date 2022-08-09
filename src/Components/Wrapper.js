@@ -10,6 +10,8 @@ import Home from "./Home/Home.js";
 import About from "./About/About";
 import Contact from "./Contact/Contact";
 import Projects from "./Projects/Projects";
+import More from "./More/More";
+import Photography from "./Photography";
 
 import Nav from "./Nav.js";
 
@@ -29,7 +31,7 @@ export default function Wrapper() {
       <Container maxWidth="md">
         {/* ANIMATION */}
         <Box sx={{ height: "40vh" }}>
-          <ModelViewer modelPath={"/3d/scene.gltf"} />
+          <ModelViewer modelPath={"/3d/scene.glb"} />
         </Box>
 
         {/* CONTENT */}
@@ -42,6 +44,8 @@ export default function Wrapper() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="About" element={<About />} />
+                <Route path="More" element={<More />} />
+                <Route path="Photography" element={<Photography />} />
                 <Route path="Projects" element={<Projects />} />
                 <Route path="Contact" element={<Contact />} />
               </Routes>

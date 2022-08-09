@@ -73,7 +73,7 @@ export default function Contact() {
       </Typography>
 
       {/* MESSAGE ME */}
-      <Box sx={{ pt: { xs: 3, sm: 5 } }}>
+      <Box sx={{ pt: { xs: 4, sm: 7 } }}>
         <Box sx={{ width: { xs: "75%", sm: "50%" } }}>
           <TextField
             label="Your Name"
@@ -105,12 +105,13 @@ export default function Contact() {
           onChange={(e) => setMessage(e.target.value)}
         />
         <Button
-          variant="contained"
+          variant="outlined"
           size="large"
+          color="pop"
           endIcon={<SendIcon />}
           onClick={sendEmail}
         >
-          Send
+          <Typography sx={{ pt: 0.1 }}>Send</Typography>
         </Button>
         <Typography variant="subtitle1" color="#FF9494" sx={{ pt: 2, pb: 2 }}>
           {error}

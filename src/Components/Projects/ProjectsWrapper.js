@@ -28,14 +28,25 @@ export default function ProjectsWrapper() {
   } else {
     return (
       <Box>
-        <Typography>{project}</Typography>
+        {/* BIO */}
+        <Typography color="primary" variant="title">
+          Projects
+        </Typography>
+        <Box sx={{ pt: { xs: 4, sm: 7 }, pb: { xs: 5, sm: 10 } }}>
+          <Typography variant="body1">
+            Below are some projects I've worked on, from coding projects to
+            design/school projects. Click each to learn more.
+          </Typography>
+        </Box>
+
+        {/* PROJECT CARDS */}
         <Grid container spacing={2}>
           {/* HeyB */}
           <Grid item xs={12}>
             <ProjectCard
               url="/assets/project_thumbnails/heyb.png"
               title="HeyB."
-              timeline="2022"
+              timeline="July 2022"
               description="Website for a creative film advertising agency based in New York City."
               setProject={setProject}
               project={"HeyB"}
@@ -46,7 +57,7 @@ export default function ProjectsWrapper() {
             <ProjectCard
               url="/assets/project_thumbnails/tomotime.png"
               title="Tomotime (Stern SVS)"
-              timeline="2022"
+              timeline="May 2022"
               description="Pitch deck made on Figma for Stern Strategic Venture Society - Startup Studio Spring 2022."
               setProject={setProject}
               project={"Tomotime"}
@@ -57,7 +68,7 @@ export default function ProjectsWrapper() {
             <ProjectCard
               url="/assets/project_thumbnails/daily.png"
               title="2022 Journal"
-              timeline="2022"
+              timeline="January 2022"
               description="Daily tracker for boba, coffee, and financial consumption. Data is kept on Airtable."
               setProject={setProject}
               project={"Daily"}
@@ -68,7 +79,7 @@ export default function ProjectsWrapper() {
             <ProjectCard
               url="/assets/project_thumbnails/boba_tracker.png"
               title="Boba Tracker"
-              timeline="2021"
+              timeline="January 2021"
               description="Used to track boba consumption in 2021. Goals were achieved."
               setProject={setProject}
               project={"BobaTracker2021"}
@@ -79,7 +90,7 @@ export default function ProjectsWrapper() {
             <ProjectCard
               url="/assets/project_thumbnails/covid.png"
               title="US States Covid Data"
-              timeline="2020"
+              timeline="November 2020"
               description="Tool for NYU students to decide whether or not it was worth to go home for winter break."
               setProject={setProject}
               project={"Covid"}

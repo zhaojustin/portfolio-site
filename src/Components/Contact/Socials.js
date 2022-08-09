@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 
 export default function Socials() {
   return (
-    <Box sx={{ pt: { xs: 3, sm: 5 }, pb: { xs: 5, sm: 10 } }}>
+    <Box sx={{ pt: { xs: 4, sm: 7 }, pb: { xs: 5, sm: 10 } }}>
       <Grid container spacing={2}>
         {/* Instagram */}
         <Grid item xs={12} sm={6}>

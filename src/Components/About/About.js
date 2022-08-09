@@ -15,7 +15,7 @@ export default function About() {
       </Typography>
 
       {/* IMAGE CARD */}
-      <Grid container spacing={2} sx={{ pt: { xs: 3, sm: 5 } }}>
+      <Grid container spacing={2} sx={{ pt: { xs: 4, sm: 7 }, pb: 5 }}>
         {/* IMAGE */}
         <Grid item xs={12} sm={5}>
           <Box
@@ -63,7 +63,7 @@ export default function About() {
         Work Experience
       </Typography>
 
-      <Grid container spacing={2} sx={{ pt: 5 }}>
+      <Grid container spacing={2} sx={{ pt: { xs: 4, sm: 7 } }}>
         {/* Moody's */}
         <Grid item xs={12}>
           <WorkExperienceCard
