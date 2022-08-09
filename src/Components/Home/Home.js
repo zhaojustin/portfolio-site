@@ -28,19 +28,24 @@ export default function Home() {
       </Box>
 
       {/* QUICK LINKS */}
-      <Stack direction={{ xs: "column", sm: "row" }} gap={2}>
+      <Stack direction={{ xs: "row" }} alignItems="center" gap={2}>
         <Link component={RouterLink} underline="none" to="/About">
-          <Button sx={{ mt: 5 }} size="large" color="pop" variant="outlined">
-            Learn More
+          <Button
+            sx={{ mt: { xs: 2, sm: 5 } }}
+            size="large"
+            color="pop"
+            variant="outlined"
+          >
+            About
           </Button>
         </Link>
         <Link component={RouterLink} underline="none" to="/Projects">
-          <Button sx={{ mt: 5 }} size="large" variant="outlined">
+          <Button sx={{ mt: { xs: 2, sm: 5 } }} size="large" variant="outlined">
             Projects
           </Button>
         </Link>
         <Link component={RouterLink} underline="none" to="/Contact">
-          <Button sx={{ mt: 5 }} size="large" variant="outlined">
+          <Button sx={{ mt: { xs: 2, sm: 5 } }} size="large" variant="outlined">
             Contact
           </Button>
         </Link>

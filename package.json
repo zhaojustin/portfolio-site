@@ -2,7 +2,7 @@
   "name": "3dsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zhaojustin.github.io/portfolio-site/",
+  "homepage": "https://justinzhao.net",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.9.3",
